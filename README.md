@@ -146,6 +146,19 @@ http://127.0.0.1:5500/admin.html
 ## 🎯 Project Objective
 
 The objective of this project is to provide a simple and user-friendly hospital appointment management system that connects patients with doctors and helps hospital administrators manage appointment information efficiently.
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home-page.png)
+
+### 📅 Book Appointment
+![Appointment Booking](screenshots/appointment-booking.png)
+
+### 📋 My Appointments
+![My Appointments](screenshots/my-appointments.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ## 👩‍💻 Developed By
 
