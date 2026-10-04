@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Doctors - CarePlus Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🏥 CarePlus
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="appointment.html" class="appointment-btn">
+                Book Appointment
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Doctors Header -->
+    <section class="doctors-header">
+
+        <p>OUR MEDICAL TEAM</p>
+
+        <h1>Meet Our Doctors</h1>
+
+        <p class="header-description">
+            Find experienced doctors across different medical specialties
+            and book an appointment easily.
+        </p>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="doctor-search">
+
+        <input
+            type="text"
+            id="doctorSearch"
+            placeholder="Search doctor or specialization..."
+            onkeyup="searchDoctors()"
+        >
+
+    </section>
+
+
+    <!-- Doctors -->
+    <section class="doctors-container" id="doctorsList">
+
+        <!-- Doctor 1 -->
+        <div class="doctor-profile">
+
+            <div class="doctor-avatar">
+                👨‍⚕️
+            </div>
+
+            <h2>Dr. Rajesh Kumar</h2>
+
+            <p class="specialization">
+                Cardiologist
+            </p>
+
+            <p>
+                Experience: 12 Years
+            </p>
+
+            <p>
+                🕐 Mon - Fri | 10 AM - 2 PM
+            </p>
+
+            <p class="fee">
+                Consultation: ₹500
+            </p>
+
+            <a href="appointment.html" class="doctor-button">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <!-- Doctor 2 -->
+        <div class="doctor-profile">
+
+            <div class="doctor-avatar">
+                👩‍⚕️
+            </div>
+
+            <h2>Dr. Priya Sharma</h2>
+
+            <p class="specialization">
+                Neurologist
+            </p>
+
+            <p>
+                Experience: 10 Years
+            </p>
+
+            <p>
+                🕐 Mon - Sat | 11 AM - 3 PM
+            </p>
+
+            <p class="fee">
+                Consultation: ₹600
+            </p>
+
+            <a href="appointment.html" class="doctor-button">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <!-- Doctor 3 -->
+        <div class="doctor-profile">
+
+            <div class="doctor-avatar">
+                👨‍⚕️
+            </div>
+
+            <h2>Dr. Arjun Reddy</h2>
+
+            <p class="specialization">
+                Orthopedic Doctor
+            </p>
+
+            <p>
+                Experience: 15 Years
+            </p>
+
+            <p>
+                🕐 Mon - Fri | 9 AM - 1 PM
+            </p>
+
+            <p class="fee">
+                Consultation: ₹550
+            </p>
+
+            <a href="appointment.html" class="doctor-button">
+                Book Now
+            </a>
+
+        </div>
+
+
+        <!-- Doctor 4 -->
+        <div class="doctor-profile">
+
+            <div class="doctor-avatar">
+                👩‍⚕️
+            </div>
+
+            <h2>Dr. Sneha Reddy</h2>
+
+            <p class="specialization">
+                Pediatrician
+            </p>
+
+            <p>
+                Experience: 8 Years
+            </p>
+
+            <p>
+                🕐 Mon - Sat | 10 AM - 4 PM
+            </p>
+
+            <p class="fee">
+                Consultation: ₹400
+            </p>
+
+            <a href="appointment.html" class="doctor-button">
+                Book Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

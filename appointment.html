@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment - CarePlus Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🏥 CarePlus
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="index.html#departments">Departments</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="appointment.html" class="appointment-btn">
+                Book Appointment
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Appointment Header -->
+    <section class="appointment-header">
+
+        <p>ONLINE APPOINTMENT</p>
+
+        <h1>Book Your Appointment</h1>
+
+        <p>
+            Fill in your details and select your preferred doctor,
+            date and time.
+        </p>
+
+    </section>
+
+
+    <!-- Appointment Form -->
+    <section class="appointment-container">
+
+        <form id="appointmentForm">
+
+            <h2>Patient Information</h2>
+
+            <!-- Patient Name -->
+            <div class="form-group">
+
+                <label for="patientName">
+                    Patient Name
+                </label>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Phone -->
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter 10-digit phone number"
+                    maxlength="10"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Age -->
+            <div class="form-group">
+
+                <label for="age">
+                    Age
+                </label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+                    min="1"
+                    max="120"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Department -->
+            <div class="form-group">
+
+                <label for="department">
+                    Select Department
+                </label>
+
+                <select id="department" required>
+
+                    <option value="">
+                        -- Select Department --
+                    </option>
+
+                    <option value="Cardiology">
+                        Cardiology
+                    </option>
+
+                    <option value="Neurology">
+                        Neurology
+                    </option>
+
+                    <option value="Orthopedics">
+                        Orthopedics
+                    </option>
+
+                    <option value="Pediatrics">
+                        Pediatrics
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Doctor -->
+            <div class="form-group">
+
+                <label for="doctor">
+                    Select Doctor
+                </label>
+
+                <select id="doctor" required>
+
+                    <option value="">
+                        -- Select Doctor --
+                    </option>
+
+                    <option value="Dr. Rajesh Kumar">
+                        Dr. Rajesh Kumar - Cardiologist
+                    </option>
+
+                    <option value="Dr. Priya Sharma">
+                        Dr. Priya Sharma - Neurologist
+                    </option>
+
+                    <option value="Dr. Arjun Reddy">
+                        Dr. Arjun Reddy - Orthopedic Doctor
+                    </option>
+
+                    <option value="Dr. Sneha Reddy">
+                        Dr. Sneha Reddy - Pediatrician
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="form-group">
+
+                <label for="appointmentDate">
+                    Appointment Date
+                </label>
+
+                <input
+                    type="date"
+                    id="appointmentDate"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Time -->
+            <div class="form-group">
+
+                <label for="appointmentTime">
+                    Appointment Time
+                </label>
+
+                <select id="appointmentTime" required>
+
+                    <option value="">
+                        -- Select Time --
+                    </option>
+
+                    <option value="10:00 AM">
+                        10:00 AM
+                    </option>
+
+                    <option value="11:00 AM">
+                        11:00 AM
+                    </option>
+
+                    <option value="12:00 PM">
+                        12:00 PM
+                    </option>
+
+                    <option value="2:00 PM">
+                        2:00 PM
+                    </option>
+
+                    <option value="3:00 PM">
+                        3:00 PM
+                    </option>
+
+                    <option value="4:00 PM">
+                        4:00 PM
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Reason -->
+            <div class="form-group">
+
+                <label for="reason">
+                    Reason for Visit
+                </label>
+
+                <textarea
+                    id="reason"
+                    rows="4"
+                    placeholder="Briefly describe your reason for consultation"
+                ></textarea>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button
+                type="submit"
+                class="confirm-button"
+            >
+                Confirm Appointment
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Confirmation Popup -->
+    <div
+        id="confirmation"
+        class="confirmation-box"
+        style="display: none;"
+    >
+
+        <div class="confirmation-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Appointment Confirmed!
+            </h2>
+
+            <p id="confirmationMessage"></p>
+
+            <div class="confirmation-buttons">
+
+                <button onclick="viewAppointments()">
+                    View My Appointments
+                </button>
+
+                <button
+                    onclick="closeConfirmation()"
+                    class="close-button"
+                >
+                    Book Another
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
